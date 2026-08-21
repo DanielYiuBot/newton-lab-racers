@@ -11,9 +11,9 @@ if (missing.length > 0) {
 
 const html = fs.readFileSync(path.join(__dirname, "..", "index.html"), "utf8");
 const requiredText = [
-  "Newton's First Law",
-  "Newton's Second Law",
-  "Newton's Third Law",
+  "Inertia Dash",
+  "F = ma Launcher",
+  "Space Skater Push",
   "canvas",
   "game.js"
 ];
