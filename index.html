@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Newton Lab Racers is an interactive game that teaches Newton's three laws of motion to junior secondary students."
+    >
+    <title>Newton Lab Racers</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero" aria-labelledby="game-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Junior Secondary Physics</p>
+          <h1 id="game-title">Newton Lab Racers</h1>
+          <p>
+            Tune rockets, dodge surprise forces, and launch action-reaction pods while mastering the
+            three laws of motion.
+          </p>
+        </div>
+        <div class="score-board" aria-live="polite">
+          <span>Score</span>
+          <strong id="score">0</strong>
+          <span>Stars</span>
+          <strong id="stars">0 / 9</strong>
+        </div>
+      </section>
+
+      <section class="game-layout">
+        <aside class="lesson-panel" aria-label="Missions">
+          <div class="mission-list" role="tablist" aria-label="Newton's laws missions">
+            <button class="mission-tab active" data-law="0" role="tab" aria-selected="true">
+              <span>1</span>
+              Newton's First Law
+            </button>
+            <button class="mission-tab" data-law="1" role="tab" aria-selected="false">
+              <span>2</span>
+              Newton's Second Law
+            </button>
+            <button class="mission-tab" data-law="2" role="tab" aria-selected="false">
+              <span>3</span>
+              Newton's Third Law
+            </button>
+          </div>
+
+          <article class="lesson-card">
+            <p class="law-label" id="law-label">Law 1: Inertia</p>
+            <h2 id="mission-title">Keep the rover cruising</h2>
+            <p id="mission-copy">
+              Objects keep doing what they are doing unless a resultant force changes their motion.
+            </p>
+            <div class="challenge">
+              <span>Mission</span>
+              <p id="challenge-copy">Tap the force bursts only when an obstacle appears.</p>
+            </div>
+          </article>
+        </aside>
+
+        <section class="play-area" aria-label="Interactive Newton's laws game">
+          <canvas id="game-canvas" width="960" height="540" aria-label="Physics game canvas"></canvas>
+          <div class="controls" id="controls"></div>
+          <div class="feedback" id="feedback" aria-live="polite">
+            Choose a mission and start experimenting.
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>

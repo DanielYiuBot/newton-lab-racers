@@ -1,0 +1,17 @@
+{
+  "name": "newton-lab-racers",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An interactive junior secondary game for learning Newton's three laws of motion.",
+  "scripts": {
+    "start": "npx serve .",
+    "check": "node scripts/check-files.js"
+  },
+  "keywords": [
+    "education",
+    "physics",
+    "newton",
+    "game"
+  ],
+  "license": "MIT"
+}
